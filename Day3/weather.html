@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thời tiết hôm nay</title>
+    <script
+      src="https://kit.fontawesome.com/d40367f1bc.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        margin-left: 50px;
+        margin-top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        height: 250px;
+        width: 400px;
+        border-style: solid;
+      }
+      .country {
+        text-align: center;
+      }
+      .time {
+        font-weight: lighter;
+        text-align: right;
+        padding-right: 10px;
+        padding-top: 3px;
+      }
+      .country {
+        padding-bottom: 3px;
+        font-size: 30px;
+      }
+      .fa-cloud {
+        font-size: 70px;
+        margin-left: 30px;
+      }
+      .temp {
+        display: inline-block;
+        margin-left: 30px;
+        font-size: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="UPPER"></div> -->
+    <div class="idk">
+      <img class="bg" src="sunny_cat.jpg" />
+      <input class="searchbox" type="text" />
+      <h2 class="status">Cloudy</h2>
+      <h2 class="place">Hanoi, Vietnam</h2>
+      <h2 class="temperature">29<sup>o</sup></h2>
+    </div>
+    <script src="weather.js"></script>
+  </body>
+</html>

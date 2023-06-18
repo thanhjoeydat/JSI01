@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b25957ae4f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .searchbox .status .place .temperature {
+      position: relative;
+    }
+    img {
+      position: relative;
+      left: 35%;
+      top: 50%;
+    }
+    #temperature {
+      font-size: 50px;
+      color: white;
+      font-family: "Rubik Puddles", cursive;
+      text-align: right;
+      padding-top: 20px;
+      padding-right: 30px;
+    }
+    #status {
+      color: wheat;
+      font-size: 35px;
+      text-align: center;
+      font-family: "Indie Flower", cursive;
+    }
+    #place {
+      text-align: center;
+      color: wheat;
+      font-size: 30px;
+      font-family: "Indie Flower", cursive;
+      text-transform: capitalize;
+    }
+    .searchbox {
+      width: 50%;
+      height: 40px;
+      border-radius: 30px;
+      background-color: unset;
+      border-color: unset;
+      padding-left: 10px;
+      color: white;
+    }
+    .fa-magnifying-glass {
+      padding-left: 5px;
+      color: white;
+    }
+    .fa-magnifying-glass:hover {
+      cursor: pointer;
+    }
+    #main {
+      width: 450px;
+      height: 670px;
+      background-image: url(sunny_cat.jpg);
+      background-size: cover;
+      margin-left: 25%;
+      margin-top: 50px;
+    }
+    #info1 {
+      padding-top: 30px;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+  </style>
+  <body>
+    <div id="main">
+      <div id="info1">
+        <!-- <img class="bg" src="sunny_cat.jpg" /> -->
+        <input class="searchbox" id="searcH" type="text" />
+        <i class="fa-solid fa-magnifying-glass" id="search"></i>
+      </div>
+      <div id="info2">
+        <h2 id="status">Weather Forecast</h2>
+        <h2 id="place"></h2>
+        <h2 id="temperature"></h2>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

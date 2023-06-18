@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .box1 {
+      width: 200px;
+      height: 50px;
+      position: relative;
+    }
+    .inputContainer {
+      width: 200px;
+      margin: 50px auto;
+    }
+
+    .ulContainer {
+      background-color: chocolate;
+      height: 250px;
+      width: 200px;
+      overflow: scroll;
+      overflow-x: hidden;
+      display: none;
+    }
+
+    li {
+      list-style: none;
+      padding: 10px 0px;
+      margin-left: 5px;
+      text-transform: capitalize;
+      color: white;
+    }
+    #typepet {
+      text-transform: capitalize;
+    }
+    li:hover {
+      color: wheat;
+    }
+    .box1:hover ~ .ulContainer {
+      display: block;
+    }
+    input {
+      width: 100%;
+    }
+    .ulContainer:hover {
+      display: block;
+    }
+    .box2 {
+      /* height: 500px; */
+      display: flex;
+      flex-direction: row;
+      position: relative;
+    }
+    .picContainer {
+      display: inline;
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+    }
+    h2 {
+      padding: 10px 10px;
+      font-size: 25px;
+    }
+    p {
+      font-size: 20px;
+    }
+  </style>
+  <body>
+    <div class="inputContainer">
+      <div class="box1">
+        <input type="text" />
+      </div>
+    </div>
+    <div class="box2">
+      <div class="picContainer">
+        <h2 id="pic"></h2>
+      </div>
+      <div class="info">
+        <h2>Name:</h2>
+        <p id="namepet"></p>
+        <h2>Type:</h2>
+        <p id="typepet"></p>
+        <h2>Height:</h2>
+        <p id="heightpet"></p>
+        <h2>Weight:</h2>
+        <p id="weightpet"></p>
+      </div>
+    </div>
+
+    <script src="pokedex.js"></script>
+  </body>
+</html>
